@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import RoomsContainer  from '../components/RoomContianer';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
-import { Link } from 'react-router-dom';
+
 
 class Rooms extends Component {
     render() {
@@ -12,6 +14,7 @@ class Rooms extends Component {
                     <Link to='/' className='btn-primary'>return home</Link>
                     </Banner>
                 </Hero>
+                <RoomsContainer />
             </div>
         );
     }

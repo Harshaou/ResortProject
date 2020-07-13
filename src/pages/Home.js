@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Services from './Services';
+import FeaturedRoom from '../components/FeaturedRoom';
 
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
                 </Banner>
             </Hero>
             <Services />
+            <FeaturedRoom />
             </>
         );
     }
