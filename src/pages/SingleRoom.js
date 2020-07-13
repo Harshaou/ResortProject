@@ -54,6 +54,7 @@ class SingleRoom extends Component {
                         <h6>size: ${size} SQFT</h6>
                         <h6>max capacity : {' '} {capacity > 1 ? `${capacity} people`: `${capacity} person `}</h6>
                         <h6>{pets ? 'pets allowed': 'no pets allowed'}</h6>
+                        <h6>{breakfast ? 'breakfast': 'no breakfast'}</h6>
                     </article>
                 </div>
             </section>
