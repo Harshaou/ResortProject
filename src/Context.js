@@ -64,7 +64,8 @@ class RoomProvider extends Component {
         if(type !== 'all'){
             tempRooms = tempRooms.filter(room => room.type === type)
          }
-
+         
+        //capacity
         if(capacity !== 1) {
             tempRooms = tempRooms.filter(item => item.capacity  >= capacity)}
 
@@ -73,8 +74,8 @@ class RoomProvider extends Component {
 
         //size
         tempRooms = tempRooms.filter(item => item.size >= minSize && item.size <= maxSize);
-        //filter by breakfast
 
+        //filter by breakfast
         if (breakfast) {
         tempRooms = tempRooms.filter(item => item.breakfast === true )
         
@@ -86,8 +87,6 @@ class RoomProvider extends Component {
 
         this.setState({sortedRooms: tempRooms})
     }
-
-    //capacity
 
 
     render() {
